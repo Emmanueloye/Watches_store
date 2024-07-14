@@ -1,0 +1,1 @@
+The main design decision came when designing the product card under the new arrival section. The design is inspired by how the wrist watches would have most likely be displayed if purchased in store hence, the decision to place the watches on its case with the details stated on the case.

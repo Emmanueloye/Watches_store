@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  --primary: #0c4ca0; /*#205295*/
+  --hover: rgb(9, 42, 85); /*#205295*/
+  --white: #fff;
+  --bg-hero: black;
+  --grey-100: #f3f4f6;
+  --grey-300: #d1d5db;
+  --secondary: #eff6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  font-size: 1.4rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1rem;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 2rem;
+}
+.btn {
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  border: none;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  transition: background-color 3s, opacity 2s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: var(--hover);
+}
+.img {
+  max-width: 100%;
+  /* height: 300px; */
+}
+.header {
+  background-color: var(--primary);
+}
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 1.5rem 2rem;
+}
+.flex-space-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brand {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.top-text {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+.bg-hero {
+  background-color: var(--bg-hero);
+  min-height: 350px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 350px;
+}
+.hero-info {
+  color: var(--white);
+  flex-basis: 60%;
+}
+.hero-info h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+.hero-info p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  /* width: 50%; */
+}
+
+.product-img {
+  flex-basis: 40%;
+}
+
+.logo {
+  border-bottom: 2px solid var(--grey-100);
+  margin-bottom: 2rem;
+}
+.logo .container {
+  padding: 0.5rem 2rem;
+}
+.logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.logo img {
+  width: 5rem;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--grey-100);
+  padding: 0 2rem;
+  height: 15rem;
+}
+.banner-text span {
+  display: block;
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.banner-text span:last-child {
+  font-weight: normal;
+}
+.banner .img {
+  height: inherit;
+}
+.product {
+  background-color: var(--grey-100);
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.product h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  min-width: 18rem;
+  position: relative;
+}
+.card-img {
+  background-color: var(--grey-300);
+  border-radius: 50%;
+  width: 20rem;
+  height: auto;
+  padding: 2rem;
+}
+.card-body {
+  background-color: var(--grey-100);
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  border: 2px solid var(--grey-300);
+  padding: 1rem;
+  text-align: center;
+}
+.card-body h4 {
+  color: var(--primary);
+  text-transform: uppercase;
+}
+footer {
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+}
+.social-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social {
+  font-size: 2rem;
+  color: var(--grey-100);
+  margin-left: 2rem;
+}
+footer p {
+  color: var(--grey-300);
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .hero-info,
+  .product-img {
+    flex-basis: 100%;
+  }
+  .product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+    text-align: center;
+  }
+  .d-none-md650 {
+    display: none;
+  }
+}
